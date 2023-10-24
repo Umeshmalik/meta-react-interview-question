@@ -22,10 +22,7 @@ const List = forwardRef(({ items = [] }, ref) => {
 
   return (
     <section className="listBox">
-      {" "}
-      {items.map((item) => (
-        <Item key={item} {...{ item, selectValue }} />
-      ))}
+      {items.map((item) => (<Item key={item} {...{ item, selectValue }} />))}
     </section>
   );
 });

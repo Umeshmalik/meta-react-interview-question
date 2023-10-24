@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import Actions from "./components/Actions";
 import List from "./components/List";
 
-import { fetchDate } from "./api";
+import { fetchData } from "./api";
 
 import "./App.css";
 
@@ -15,7 +15,7 @@ export default function App() {
   const rightRef = useRef(null);
 
   useEffect(() => {
-    fetchDate().then(res => setLeftList(res));
+    fetchData().then(res => setLeftList(res));
   }, []);
 
   return (
