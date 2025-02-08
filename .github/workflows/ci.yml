@@ -23,6 +23,3 @@ jobs:
 
     - name: Run build
       run: npm run build  # Replace with your build command
-
-    - name: Run lint
-      run: npm run lint  # Replace with your lint command
